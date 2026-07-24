@@ -1,0 +1,37 @@
+order_id,date,region,channel,segment,revenue,cost,status
+DEMO-1001,2026-01-08,North,Direct,Core,12400,7600,On time
+DEMO-1002,2026-01-12,Central,Digital,Growth,8600,5100,On time
+DEMO-1003,2026-01-17,South,Partner,Core,7100,4700,Delayed
+DEMO-1004,2026-01-21,North,Digital,Enterprise,18400,10100,On time
+DEMO-1005,2026-01-25,Central,Direct,Growth,9900,5800,On time
+DEMO-1006,2026-01-29,South,Digital,Core,6800,4200,On time
+DEMO-1007,2026-02-05,North,Partner,Growth,11200,6500,On time
+DEMO-1008,2026-02-09,Central,Digital,Core,7900,4800,Delayed
+DEMO-1009,2026-02-14,South,Direct,Enterprise,20100,11200,On time
+DEMO-1010,2026-02-18,North,Direct,Core,13100,7900,On time
+DEMO-1011,2026-02-23,Central,Partner,Growth,10500,6100,On time
+DEMO-1012,2026-02-27,South,Digital,Core,7300,4500,On time
+DEMO-1013,2026-03-04,North,Digital,Growth,11800,6700,On time
+DEMO-1014,2026-03-08,Central,Direct,Enterprise,21600,11900,On time
+DEMO-1015,2026-03-13,South,Partner,Core,7600,4900,Delayed
+DEMO-1016,2026-03-17,North,Direct,Core,13900,8200,On time
+DEMO-1017,2026-03-22,Central,Digital,Growth,10900,6200,On time
+DEMO-1018,2026-03-28,South,Direct,Enterprise,19400,10800,On time
+DEMO-1019,2026-04-03,North,Partner,Core,12800,7500,On time
+DEMO-1020,2026-04-07,Central,Digital,Growth,11600,6600,On time
+DEMO-1021,2026-04-12,South,Direct,Enterprise,22400,12100,On time
+DEMO-1022,2026-04-16,North,Digital,Growth,12100,6900,Delayed
+DEMO-1023,2026-04-21,Central,Direct,Core,9200,5500,On time
+DEMO-1024,2026-04-27,South,Partner,Core,8100,5000,On time
+DEMO-1025,2026-05-04,North,Direct,Enterprise,23100,12400,On time
+DEMO-1026,2026-05-09,Central,Partner,Growth,12400,7000,On time
+DEMO-1027,2026-05-13,South,Digital,Core,8500,5100,On time
+DEMO-1028,2026-05-18,North,Digital,Growth,13200,7400,On time
+DEMO-1029,2026-05-23,Central,Direct,Core,10100,5900,Delayed
+DEMO-1030,2026-05-28,South,Partner,Enterprise,21800,11700,On time
+DEMO-1031,2026-06-03,North,Partner,Growth,13700,7600,On time
+DEMO-1032,2026-06-08,Central,Digital,Enterprise,23900,12700,On time
+DEMO-1033,2026-06-12,South,Direct,Core,9200,5400,On time
+DEMO-1034,2026-06-17,North,Direct,Growth,14600,8100,On time
+DEMO-1035,2026-06-22,Central,Partner,Core,10800,6200,On time
+DEMO-1036,2026-06-27,South,Digital,Enterprise,22600,12000,Delayed

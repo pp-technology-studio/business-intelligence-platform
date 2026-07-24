@@ -1,0 +1,588 @@
+{
+  "meta": {
+    "dataset": "Fictional business transactions",
+    "generatedAt": "2026-07-24T18:30:14.727Z",
+    "sourceFiles": [
+      "orders.csv",
+      "targets.csv"
+    ],
+    "latestRecordDate": "2026-06-27",
+    "disclaimer": "All records and metrics are fictional sample data for product demonstration."
+  },
+  "quality": {
+    "status": "Passed",
+    "rowsRead": 36,
+    "rowsAccepted": 36,
+    "rowsRejected": 0,
+    "checks": [
+      {
+        "name": "Required fields",
+        "status": "Passed"
+      },
+      {
+        "name": "Unique order IDs",
+        "status": "Passed"
+      },
+      {
+        "name": "Allowed dimensions",
+        "status": "Passed"
+      },
+      {
+        "name": "Numeric ranges",
+        "status": "Passed"
+      },
+      {
+        "name": "Date validity",
+        "status": "Passed"
+      }
+    ]
+  },
+  "lineage": [
+    {
+      "stage": "01",
+      "name": "Source",
+      "detail": "orders.csv + targets.csv"
+    },
+    {
+      "stage": "02",
+      "name": "Validate",
+      "detail": "5 deterministic quality rules"
+    },
+    {
+      "stage": "03",
+      "name": "Model",
+      "detail": "Revenue, margin, delivery dimensions"
+    },
+    {
+      "stage": "04",
+      "name": "Publish",
+      "detail": "Versioned analytics JSON"
+    }
+  ],
+  "overall": {
+    "orders": 36,
+    "revenue": 478600,
+    "grossProfit": 206300,
+    "margin": 0.431,
+    "averageOrder": 13294,
+    "onTimeRate": 0.8333
+  },
+  "monthly": [
+    {
+      "month": "2026-01",
+      "orders": 6,
+      "revenue": 63200,
+      "grossProfit": 25700,
+      "margin": 0.4066,
+      "averageOrder": 10533,
+      "onTimeRate": 0.8333,
+      "target": 60000
+    },
+    {
+      "month": "2026-02",
+      "orders": 6,
+      "revenue": 70100,
+      "grossProfit": 29100,
+      "margin": 0.4151,
+      "averageOrder": 11683,
+      "onTimeRate": 0.8333,
+      "target": 68000
+    },
+    {
+      "month": "2026-03",
+      "orders": 6,
+      "revenue": 85200,
+      "grossProfit": 36500,
+      "margin": 0.4284,
+      "averageOrder": 14200,
+      "onTimeRate": 0.8333,
+      "target": 76000
+    },
+    {
+      "month": "2026-04",
+      "orders": 6,
+      "revenue": 76200,
+      "grossProfit": 32600,
+      "margin": 0.4278,
+      "averageOrder": 12700,
+      "onTimeRate": 0.8333,
+      "target": 82000
+    },
+    {
+      "month": "2026-05",
+      "orders": 6,
+      "revenue": 89100,
+      "grossProfit": 39600,
+      "margin": 0.4444,
+      "averageOrder": 14850,
+      "onTimeRate": 0.8333,
+      "target": 88000
+    },
+    {
+      "month": "2026-06",
+      "orders": 6,
+      "revenue": 94800,
+      "grossProfit": 42800,
+      "margin": 0.4515,
+      "averageOrder": 15800,
+      "onTimeRate": 0.8333,
+      "target": 94000
+    }
+  ],
+  "byRegion": [
+    {
+      "region": "North",
+      "orders": 12,
+      "revenue": 170300,
+      "grossProfit": 73400,
+      "margin": 0.431,
+      "averageOrder": 14192,
+      "onTimeRate": 0.9167
+    },
+    {
+      "region": "Central",
+      "orders": 12,
+      "revenue": 147400,
+      "grossProfit": 63600,
+      "margin": 0.4315,
+      "averageOrder": 12283,
+      "onTimeRate": 0.8333
+    },
+    {
+      "region": "South",
+      "orders": 12,
+      "revenue": 160900,
+      "grossProfit": 69300,
+      "margin": 0.4307,
+      "averageOrder": 13408,
+      "onTimeRate": 0.75
+    }
+  ],
+  "byChannel": [
+    {
+      "channel": "Direct",
+      "orders": 13,
+      "revenue": 199000,
+      "grossProfit": 86200,
+      "margin": 0.4332,
+      "averageOrder": 15308,
+      "onTimeRate": 0.9231
+    },
+    {
+      "channel": "Digital",
+      "orders": 13,
+      "revenue": 163600,
+      "grossProfit": 71300,
+      "margin": 0.4358,
+      "averageOrder": 12585,
+      "onTimeRate": 0.7692
+    },
+    {
+      "channel": "Partner",
+      "orders": 10,
+      "revenue": 116000,
+      "grossProfit": 48800,
+      "margin": 0.4207,
+      "averageOrder": 11600,
+      "onTimeRate": 0.8
+    }
+  ],
+  "orders": [
+    {
+      "id": "DEMO-1001",
+      "date": "2026-01-08",
+      "month": "2026-01",
+      "region": "North",
+      "channel": "Direct",
+      "segment": "Core",
+      "revenue": 12400,
+      "cost": 7600,
+      "status": "On time"
+    },
+    {
+      "id": "DEMO-1002",
+      "date": "2026-01-12",
+      "month": "2026-01",
+      "region": "Central",
+      "channel": "Digital",
+      "segment": "Growth",
+      "revenue": 8600,
+      "cost": 5100,
+      "status": "On time"
+    },
+    {
+      "id": "DEMO-1003",
+      "date": "2026-01-17",
+      "month": "2026-01",
+      "region": "South",
+      "channel": "Partner",
+      "segment": "Core",
+      "revenue": 7100,
+      "cost": 4700,
+      "status": "Delayed"
+    },
+    {
+      "id": "DEMO-1004",
+      "date": "2026-01-21",
+      "month": "2026-01",
+      "region": "North",
+      "channel": "Digital",
+      "segment": "Enterprise",
+      "revenue": 18400,
+      "cost": 10100,
+      "status": "On time"
+    },
+    {
+      "id": "DEMO-1005",
+      "date": "2026-01-25",
+      "month": "2026-01",
+      "region": "Central",
+      "channel": "Direct",
+      "segment": "Growth",
+      "revenue": 9900,
+      "cost": 5800,
+      "status": "On time"
+    },
+    {
+      "id": "DEMO-1006",
+      "date": "2026-01-29",
+      "month": "2026-01",
+      "region": "South",
+      "channel": "Digital",
+      "segment": "Core",
+      "revenue": 6800,
+      "cost": 4200,
+      "status": "On time"
+    },
+    {
+      "id": "DEMO-1007",
+      "date": "2026-02-05",
+      "month": "2026-02",
+      "region": "North",
+      "channel": "Partner",
+      "segment": "Growth",
+      "revenue": 11200,
+      "cost": 6500,
+      "status": "On time"
+    },
+    {
+      "id": "DEMO-1008",
+      "date": "2026-02-09",
+      "month": "2026-02",
+      "region": "Central",
+      "channel": "Digital",
+      "segment": "Core",
+      "revenue": 7900,
+      "cost": 4800,
+      "status": "Delayed"
+    },
+    {
+      "id": "DEMO-1009",
+      "date": "2026-02-14",
+      "month": "2026-02",
+      "region": "South",
+      "channel": "Direct",
+      "segment": "Enterprise",
+      "revenue": 20100,
+      "cost": 11200,
+      "status": "On time"
+    },
+    {
+      "id": "DEMO-1010",
+      "date": "2026-02-18",
+      "month": "2026-02",
+      "region": "North",
+      "channel": "Direct",
+      "segment": "Core",
+      "revenue": 13100,
+      "cost": 7900,
+      "status": "On time"
+    },
+    {
+      "id": "DEMO-1011",
+      "date": "2026-02-23",
+      "month": "2026-02",
+      "region": "Central",
+      "channel": "Partner",
+      "segment": "Growth",
+      "revenue": 10500,
+      "cost": 6100,
+      "status": "On time"
+    },
+    {
+      "id": "DEMO-1012",
+      "date": "2026-02-27",
+      "month": "2026-02",
+      "region": "South",
+      "channel": "Digital",
+      "segment": "Core",
+      "revenue": 7300,
+      "cost": 4500,
+      "status": "On time"
+    },
+    {
+      "id": "DEMO-1013",
+      "date": "2026-03-04",
+      "month": "2026-03",
+      "region": "North",
+      "channel": "Digital",
+      "segment": "Growth",
+      "revenue": 11800,
+      "cost": 6700,
+      "status": "On time"
+    },
+    {
+      "id": "DEMO-1014",
+      "date": "2026-03-08",
+      "month": "2026-03",
+      "region": "Central",
+      "channel": "Direct",
+      "segment": "Enterprise",
+      "revenue": 21600,
+      "cost": 11900,
+      "status": "On time"
+    },
+    {
+      "id": "DEMO-1015",
+      "date": "2026-03-13",
+      "month": "2026-03",
+      "region": "South",
+      "channel": "Partner",
+      "segment": "Core",
+      "revenue": 7600,
+      "cost": 4900,
+      "status": "Delayed"
+    },
+    {
+      "id": "DEMO-1016",
+      "date": "2026-03-17",
+      "month": "2026-03",
+      "region": "North",
+      "channel": "Direct",
+      "segment": "Core",
+      "revenue": 13900,
+      "cost": 8200,
+      "status": "On time"
+    },
+    {
+      "id": "DEMO-1017",
+      "date": "2026-03-22",
+      "month": "2026-03",
+      "region": "Central",
+      "channel": "Digital",
+      "segment": "Growth",
+      "revenue": 10900,
+      "cost": 6200,
+      "status": "On time"
+    },
+    {
+      "id": "DEMO-1018",
+      "date": "2026-03-28",
+      "month": "2026-03",
+      "region": "South",
+      "channel": "Direct",
+      "segment": "Enterprise",
+      "revenue": 19400,
+      "cost": 10800,
+      "status": "On time"
+    },
+    {
+      "id": "DEMO-1019",
+      "date": "2026-04-03",
+      "month": "2026-04",
+      "region": "North",
+      "channel": "Partner",
+      "segment": "Core",
+      "revenue": 12800,
+      "cost": 7500,
+      "status": "On time"
+    },
+    {
+      "id": "DEMO-1020",
+      "date": "2026-04-07",
+      "month": "2026-04",
+      "region": "Central",
+      "channel": "Digital",
+      "segment": "Growth",
+      "revenue": 11600,
+      "cost": 6600,
+      "status": "On time"
+    },
+    {
+      "id": "DEMO-1021",
+      "date": "2026-04-12",
+      "month": "2026-04",
+      "region": "South",
+      "channel": "Direct",
+      "segment": "Enterprise",
+      "revenue": 22400,
+      "cost": 12100,
+      "status": "On time"
+    },
+    {
+      "id": "DEMO-1022",
+      "date": "2026-04-16",
+      "month": "2026-04",
+      "region": "North",
+      "channel": "Digital",
+      "segment": "Growth",
+      "revenue": 12100,
+      "cost": 6900,
+      "status": "Delayed"
+    },
+    {
+      "id": "DEMO-1023",
+      "date": "2026-04-21",
+      "month": "2026-04",
+      "region": "Central",
+      "channel": "Direct",
+      "segment": "Core",
+      "revenue": 9200,
+      "cost": 5500,
+      "status": "On time"
+    },
+    {
+      "id": "DEMO-1024",
+      "date": "2026-04-27",
+      "month": "2026-04",
+      "region": "South",
+      "channel": "Partner",
+      "segment": "Core",
+      "revenue": 8100,
+      "cost": 5000,
+      "status": "On time"
+    },
+    {
+      "id": "DEMO-1025",
+      "date": "2026-05-04",
+      "month": "2026-05",
+      "region": "North",
+      "channel": "Direct",
+      "segment": "Enterprise",
+      "revenue": 23100,
+      "cost": 12400,
+      "status": "On time"
+    },
+    {
+      "id": "DEMO-1026",
+      "date": "2026-05-09",
+      "month": "2026-05",
+      "region": "Central",
+      "channel": "Partner",
+      "segment": "Growth",
+      "revenue": 12400,
+      "cost": 7000,
+      "status": "On time"
+    },
+    {
+      "id": "DEMO-1027",
+      "date": "2026-05-13",
+      "month": "2026-05",
+      "region": "South",
+      "channel": "Digital",
+      "segment": "Core",
+      "revenue": 8500,
+      "cost": 5100,
+      "status": "On time"
+    },
+    {
+      "id": "DEMO-1028",
+      "date": "2026-05-18",
+      "month": "2026-05",
+      "region": "North",
+      "channel": "Digital",
+      "segment": "Growth",
+      "revenue": 13200,
+      "cost": 7400,
+      "status": "On time"
+    },
+    {
+      "id": "DEMO-1029",
+      "date": "2026-05-23",
+      "month": "2026-05",
+      "region": "Central",
+      "channel": "Direct",
+      "segment": "Core",
+      "revenue": 10100,
+      "cost": 5900,
+      "status": "Delayed"
+    },
+    {
+      "id": "DEMO-1030",
+      "date": "2026-05-28",
+      "month": "2026-05",
+      "region": "South",
+      "channel": "Partner",
+      "segment": "Enterprise",
+      "revenue": 21800,
+      "cost": 11700,
+      "status": "On time"
+    },
+    {
+      "id": "DEMO-1031",
+      "date": "2026-06-03",
+      "month": "2026-06",
+      "region": "North",
+      "channel": "Partner",
+      "segment": "Growth",
+      "revenue": 13700,
+      "cost": 7600,
+      "status": "On time"
+    },
+    {
+      "id": "DEMO-1032",
+      "date": "2026-06-08",
+      "month": "2026-06",
+      "region": "Central",
+      "channel": "Digital",
+      "segment": "Enterprise",
+      "revenue": 23900,
+      "cost": 12700,
+      "status": "On time"
+    },
+    {
+      "id": "DEMO-1033",
+      "date": "2026-06-12",
+      "month": "2026-06",
+      "region": "South",
+      "channel": "Direct",
+      "segment": "Core",
+      "revenue": 9200,
+      "cost": 5400,
+      "status": "On time"
+    },
+    {
+      "id": "DEMO-1034",
+      "date": "2026-06-17",
+      "month": "2026-06",
+      "region": "North",
+      "channel": "Direct",
+      "segment": "Growth",
+      "revenue": 14600,
+      "cost": 8100,
+      "status": "On time"
+    },
+    {
+      "id": "DEMO-1035",
+      "date": "2026-06-22",
+      "month": "2026-06",
+      "region": "Central",
+      "channel": "Partner",
+      "segment": "Core",
+      "revenue": 10800,
+      "cost": 6200,
+      "status": "On time"
+    },
+    {
+      "id": "DEMO-1036",
+      "date": "2026-06-27",
+      "month": "2026-06",
+      "region": "South",
+      "channel": "Digital",
+      "segment": "Enterprise",
+      "revenue": 22600,
+      "cost": 12000,
+      "status": "Delayed"
+    }
+  ]
+}
