@@ -20,7 +20,7 @@ export async function generateMetadata(): Promise<Metadata> {
     description,
     applicationName: "Signal Intelligence",
     icons: { icon: "/favicon.png", shortcut: "/favicon.png" },
-    robots: { index: false, follow: false },
+    robots: { index: true, follow: true },
     openGraph: {
       title,
       description,

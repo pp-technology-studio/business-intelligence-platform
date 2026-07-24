@@ -58,9 +58,12 @@ npm run build
 
 ## Publication status
 
-This project is currently a local, unpublished demonstration. Repository
-creation, public deployment, catalog integration, and domain configuration
-remain subject to explicit approval.
+- Public repository:
+  [pp-technology-studio/business-intelligence-platform](https://github.com/pp-technology-studio/business-intelligence-platform)
+- Live demonstration:
+  [signal-intelligence.pigua8100.chatgpt.site](https://signal-intelligence.pigua8100.chatgpt.site/)
+- Planned canonical domain:
+  `insights.pptechnologystudio.com` (awaiting DNS validation)
 
 ## Brand
 
