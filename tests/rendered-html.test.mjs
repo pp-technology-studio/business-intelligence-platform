@@ -22,7 +22,7 @@ async function render() {
   );
 }
 
-test("server-renders the complete Signal Intelligence demonstration", async () => {
+test("server-renders the dashboard-first Signal Intelligence application", async () => {
   const response = await render();
   assert.equal(response.status, 200);
   assert.match(response.headers.get("content-type") ?? "", /^text\/html\b/i);
@@ -30,11 +30,15 @@ test("server-renders the complete Signal Intelligence demonstration", async () =
   const html = await response.text();
   assert.match(html, /<title>Signal Intelligence \| P&amp;P Technology Studio<\/title>/i);
   assert.match(html, /Functional demonstration/);
-  assert.match(html, /Fictional data/);
-  assert.match(html, /Executive performance/);
-  assert.match(html, /Data observability/);
-  assert.match(html, /Reproducible pipeline/);
+  assert.match(html, /Fictional demo data/);
+  assert.match(html, /Executive overview/);
+  assert.match(html, /Monthly performance/);
+  assert.match(html, /Channel contribution/);
+  assert.match(html, /Recent accepted records/);
+  assert.match(html, /Data quality/);
+  assert.match(html, /Pipeline/);
   assert.match(html, /They are not P&amp;P Technology Studio results or client outcomes/);
+  assert.doesNotMatch(html, /From raw files to a decision-ready view/);
   assert.doesNotMatch(html, /codex-preview|SkeletonPreview|react-loading-skeleton/i);
   assert.doesNotMatch(html, /Pablozxch Studios|Business Growth/i);
 });

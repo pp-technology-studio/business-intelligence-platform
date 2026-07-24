@@ -1,7 +1,7 @@
 {
   "meta": {
     "dataset": "Fictional business transactions",
-    "generatedAt": "2026-07-24T18:30:14.727Z",
+    "generatedAt": "2026-07-24T18:40:59.346Z",
     "sourceFiles": [
       "orders.csv",
       "targets.csv"

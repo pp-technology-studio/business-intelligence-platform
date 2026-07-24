@@ -18,8 +18,10 @@ or a historical business outcome.
   numeric ranges, and dates;
 - modeled revenue, margin, delivery, region, channel, and segment measures;
 - interactive period and region filters;
-- executive KPIs, monthly target comparison, channel contribution, and recent
-  modeled records;
+- a dashboard-first application shell with dedicated Overview, Performance,
+  Data Quality, and Pipeline views;
+- executive KPIs, monthly target comparison, channel contribution, regional
+  and segment analysis, and modeled records;
 - visible lineage from source files to the published analytics model; and
 - a downloadable JSON model generated from the same pipeline used by the UI.
 
